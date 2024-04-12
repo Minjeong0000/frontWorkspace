@@ -1,0 +1,27 @@
+/* body{
+  background-color: lightgray;
+} */
+
+#t01{
+  width: 800px;
+  height: 500px;
+  background-color: rgba(106, 255, 138, 0.247);
+  border: 30px dashed pink;
+  box-sizing: border-box;
+  background-image: url(../resources/img/제목\ 없음.png);
+  background-repeat: no-repeat;
+  /* background-size: auto; */
+  /* background-size: contain; */
+  /* background-size: cover; */
+  /* background-size: 60% 100%; */
+background-size: auto;
+/* background-position: right top; */
+/* background-position: center center; */
+background-position: 50% 50%;
+/* background-origin: padding-box; */
+/* background-origin: border-box; */
+/* background-origin: content-box; */
+
+
+
+}
