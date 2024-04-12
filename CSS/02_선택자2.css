@@ -1,0 +1,43 @@
+h1{
+  background-color: red;
+}
+
+input[name="userPwd"]{
+  background-color: aqua;
+}
+
+label[id="userPwdLabel"]{
+  color: red;
+}
+
+#test01{
+  border: 5px solid black;
+}
+
+#test01>ul>li{
+  color: blue;
+}
+
+#target~div{
+  color: blue;
+}
+
+#active-test:active{
+  background-color: lightblue;
+}
+#hover-test:hover{
+  background-color: green;
+}
+
+input[type="checkbox"]:checked{
+  width: 100px;
+  height: 100px;
+}
+
+#abc:focus{
+  background-color: aqua;
+}
+
+input[type ="button"]:enabled{
+  background-color: violet;
+}
