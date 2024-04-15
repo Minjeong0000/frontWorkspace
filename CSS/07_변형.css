@@ -1,0 +1,50 @@
+.box{
+width: 100px;
+height: 100px;
+background-color: gray;
+border: 1px solid black;
+}
+
+#test-2d:hover{
+  /* transform: translate (x축이동,y축이동값) */
+  /* transform: translateX(100px); */
+  /* scale확대,축소 */
+  /* transform: scale(0.5);  */
+  /* transform: scale(5,3); */
+
+   /* rotateX(00deg); ->무슨축(X,Y,Z)을 회전축으로 몇 도 회전  */
+  /* transform: rotateX(-45deg);  */
+
+
+  /* transform:skewX(30deg) 비틀기 */
+  /* transform:skewY(30deg) */
+
+  transform: skew(30deg,45deg);
+
+
+}
+
+
+#test-3d:hover{
+  /* transform: perspective(100px) translate3d(1px,20px,20px); */
+  /* transform: perspective(150px) rotate3d(1,0,1,45deg); */
+  transform: perspective(150px) scale3d(1.5,2,2) rotate3d(1,2,1,45deg);
+
+}
+
+.box-sm{
+  width: 50px;
+  height: 50px;
+  background-color: darkslategray;
+  
+}
+
+#test-etc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#target:hover{
+  transform-origin: 50% 50%;
+  transform: rotate(50deg);
+}

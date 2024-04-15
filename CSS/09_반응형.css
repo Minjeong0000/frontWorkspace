@@ -1,0 +1,18 @@
+@media (max-width:1920px) {
+  h1{
+    background-color: rgb(96, 96, 187);
+  }
+}
+
+@media (max-width:1023px) {
+  h1{
+    background-color: rgb(202, 92, 92);
+  }
+}
+
+@media (max-width:767px) {
+  h1{
+    background-color: rgb(126, 187, 118);
+  }
+}
+

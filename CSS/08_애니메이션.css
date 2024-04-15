@@ -1,0 +1,130 @@
+.box{
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  border: 1px solid black;
+
+}
+
+#target{
+ /* transform: translateX(500px); */
+ /* transition: 2s;
+  transition-property: all; ->적용대상
+  transition-duration: 2s; ->몇초에 걸쳐 움직이게 할건지
+  transition-delay: 1s; ->바로동작x몇초 후에 움직이게 설정
+  transition-timing-function: cubic-bezier(); -> 강약조절
+*/
+  /* transition : all 2s 1s cubic-bezier(); */
+
+  animation-name: hello2;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 50;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  animation-play-state: running;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+#target:hover{
+  animation-play-state: paused;
+}
+
+@keyframes hello{
+  0%{
+    background-color: rgb(255, 0, 0);
+    width: 300px;
+    height: 300px;
+
+  }
+ 
+  50%{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+
+  }
+
+  100%{
+    background-color: rgb(0, 255, 13);
+    width: 300px;
+    height: 300px;
+  }
+}
+
+#t{
+animation-name: abc2;
+animation-duration: 0.5s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+#t:hover{
+  animation-play-state: paused;
+}
+@keyframes abc{
+  0%{
+
+  }
+  100%{
+    transform:rotateZ(360deg);
+  }
+}
+
+.btn-jelly:hover{
+  background-color: rgba(174, 232, 250, 0.74);
+  border-radius: 10px;
+  border-width: 0px;
+
+  animation: jelly;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite ;
+}
+@keyframes jelly {
+  0%{
+background-color: rgba(18, 127, 177, 0.637);
+transform:scale(0.8,1.2);
+  }
+  50%{
+    background-color: rgba(108, 255, 255, 0.575);
+    transform:scale(1.2,0.9);
+  }
+  100%{
+ background-color: rgba(106, 88, 212, 0.87);
+ transform:scale(0.5,1.3);
+  }
+}
+
+#back-v:hover{
+  transform:rotateX(180deg);
+  transition: 2s;
+  backface-visibility: hidden;
+}
+
+#card{
+  width: 80px;
+  height: 100px;
+  border: 5px solid black;
+  box-sizing: border-box;
+  margin: 50px;
+  position: relative;
+}
+
+#card>div{
+  width:100%;
+  height: 100%;
+  position: absolute;
+}
+#card:hover>div{
+  transform: rotateX(180deg);
+}
+#front{
+  background-color: red;
+  backface-visibility: hidden;
+}
+#back{
+  background-color: blue;
+  z-index: -1;
+  /* transform: rotateX(180deg);
+  backface-visibility: hidden; */
+}
