@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+  <link rel="stylesheet" href="./08_DOM.css">
+</head>
+<body>
+  <h1>DOM (Document Object Model )</h1>
+  <button onclick="f01();">f01함수 호출 버튼</button>
+  <button onclick="f02();">f02함수 호출 버튼</button>
+  <button onclick="f03();">f03함수 호출 버튼</button>
+  <div id="target">
+    <!-- <img src="../resources/img/" alt="귀여운강아지사진"> -->
+  </div>
+
+  <pre>
+    Node
+    - 
+    - 
+
+    document.createElement('태그명');
+    document.createTextNote('텍스트');
+    요소노드.appendChild(노드);
+    요소노드.setAttribute("속성명","속성값");
+    요소노드.removeChild(노드);
+
+  </pre>
+
+
+  <hr>
+
+  <div id="result" class="box"></div>
+  <br>
+
+  
+  <button onclick="addRed();">빨강</button>
+  <button onclick="addBlue();">파랑</button>
+  <button onclick="addGreen();">초록</button>
+  <br>
+  <button onclick="removeRed();">빨강지우기</button>
+  <button onclick="removeBlue();">파랑지우기</button>
+  <button onclick="removeGreen();">초록지우기</button>
+
+
+  
+  <script src="./08_DOM.js"></script>
+</body>
+</html>

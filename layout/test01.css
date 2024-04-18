@@ -1,0 +1,104 @@
+/*기본css리셋*/
+body,h1,h2,h3{
+  margin: 0;
+}
+
+
+body{
+  background-color: rgb(254, 254, 254);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main{
+  width: 30vw; 
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-rows: 3fr 4fr 1fr 2fr 4fr;
+  grid-template-columns: 1fr;
+}
+
+#logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#logo>img{
+  margin-top: 10%;
+}
+#login{
+  display: grid;
+  grid-template-rows: 2fr 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+#login>div:nth-child(1){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#div-id, #div-pwd{
+  border : 1px solid rgb(165, 165, 165);
+  width: 80%;
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#login input{
+  border:0px
+  
+}
+
+/* 테두기깎기 */
+#div-id{
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom: 0px;
+}
+
+#div-pwd{
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+#login input [type=checkbox]{
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+}
+#login-btn-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#login-btn-wrap > button{
+  width: 90%;
+  height: 80%;
+  color: white;
+  background-color: #03c75a;
+  font-weight: 900;
+  font-size:1.5em;
+  border: 0px;
+  border-radius: 8px;
+}
+#menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu>span{
+  font-size:0.8em;
+  color: rgb(126, 125, 125);
+}
+#ad-img-area{
+  width: 100%;
+  height: 100%;
+  background-image: url("../resources/img/abc.png");
+  background-size: contain;/*이미지 반복채우기*/
+  background-repeat: no-repeat;/*반복중지*/
+  background-position: center center;
+}
