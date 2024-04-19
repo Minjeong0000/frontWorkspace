@@ -1,0 +1,60 @@
+#back{
+  width: 800px;
+  height: 600px;
+  background-color: aliceblue;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+#main > table{
+  width: 600px;
+  height: 400px;
+  background-color: rgb(233, 230, 230);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+table > *{
+  width: 100%;
+}
+
+#c-g{
+  color: gray;
+}
+
+input[type="text"],input[type="password"] {
+  width: 100%;
+  border: none; 
+  border-bottom: 1px dashed black; 
+  background-color: transparent; 
+  outline: none; 
+}
+input[type="email"]{
+  width: 100%;
+  border: none; 
+  border-bottom: 1px dashed black; 
+  background-color: transparent; 
+  outline: none; 
+  
+}
+input[type="submit"]{
+
+  width: 90%;
+  height: 30px;
+  background-color: rgb(139, 207, 145);
+  border: none;
+  font-size: 1.1em;
+  font-weight: bolder;
+  color: rgb(37, 68, 47);
+}
+table tr>th{
+  text-align: left;
+}
+#target{
+  font-size: 0.7em;
+  color: rgb(139, 139, 139);
+}
