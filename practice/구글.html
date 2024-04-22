@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./구글.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://kit.fontawesome.com/51db22a717.js" crossorigin="anonymous"></script>
+    <script defer src="./구글.js"></script>
+    <title>Google</title>
+</head>
+<body id="body">
+    <!--html-->
+    <header class="top-header">
+        <nav class="top-nav">
+            <!-- <div>
+                <button id="pt">party time</button>
+            </div> -->
+            <ul>
+                <li><button id="pt">party time</button></li>
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">이미지</a></li>
+                <li><a href="#" id="toggleMenu"><img src="https://ssl.gstatic.com/gb/images/bar/al-icon.png" alt="메뉴아이콘"></a></li>
+            </ul>
+
+            <div class="fade-in" id="smallMenu">   <!-- 미니메뉴 -->
+               
+             <div id ="smallMenu-wrap">
+
+             </div>
+            </div>
+
+            <div class="profile_img_wrap">
+                <img id="profile" src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAxL3JtNjA5LXNvbGlkaWNvbi13LTAwMi1wLnBuZw.png">
+            </div>
+        </nav>
+    </header>
+    <section class="main-section">
+        <div class="logo-wrap">
+           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1024px-Google_2015_logo.svg.png">
+        </div>
+        <div class="searchbar-wrap" id="searchbarWrap">
+            <i class="fas fa-search"></i>
+            <input class="search-input" id ="searchInput" placeholder="Google 검색 또는 URL 입력" type="text"/>
+            <i class="fas fa-keyboard"></i>
+        </div> 
+        <div class="buttons">
+            <button>Google 검색</button>
+            <button>I'm Feeling Lucky</button>
+        </div>
+        <div class="now-lang">
+            <span>Google 제공 서비스: </span><a href="#">English</a>
+        </div>
+    </section>
+    <footer>
+        <div class="country">
+            <span>대한민국</span>
+            <span><button id="chrome">
+                <div id="customize"></div>
+                <div>Chrome맞춤설정</div>
+            </button></span>
+        </div>
+        <div class="foot-links-wrap">
+            <div class="foot-links-wrap-right">
+                <ul>
+                    <li><a href="#">광고</a></li>
+                    <li><a href="#">비즈니스</a></li>
+                    <li><a href="#">Google 정보</a></li>
+                    <li><a href="#">검색의 원리</a></li>
+                </ul>
+            </div>
+            <div class="foot-links-wrap-left">
+                <ul>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">약관</a></li>
+                    <li><a href="#">설정</a></li>
+                </ul>
+            </div>
+            </div>
+            
+        </div>
+    </footer>
+</body>
+</html>
