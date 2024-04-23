@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="로그인요청을 받아주는 서버주소" onsubmit="return false" > <!-- return false => 제출못하게막음-->
+    <input type="text" name ="memberId" placeholder="아이디">
+    <br>
+    <input type="password" name ="memberPwd" placeholder="비밀번호">
+    <br>
+    <input type="submit" value="로그인">
+    <!--
+      폼태그는 기본적으로 이벤트핸들러가 달려있고 얘는 submit을 감시함
+      
+      인풋(서브밋)버튼을 "클릭"
+      인풋태그에 클릭 이벤트 발생
+      타입이 서브밋인 버튼은 서브밋이벤트도 발생시킴
+      서브밋 이벤트는 인풋요소에서 만들어짐
+      이벤트는 부모한테 전파되므로, form태그까지 submit이벤트가 전달됨
+      form 태그를 감시하던 이벤트리스너가 동작하게됨
+      제출이 이루어짐
+    -->
+  
+  </form>
+
+
+</body>
+</html>
